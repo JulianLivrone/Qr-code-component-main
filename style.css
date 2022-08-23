@@ -1,7 +1,25 @@
+/* =================
+   Table of Contents
+
+   1. Global Styles: Global styles for my project.
+
+   2. Layout: Styles related with layout, e.g. header, nav, main, section, footer, div, etc.
+
+   3. Typography: Styles related to text, e.g. h1, h2, p, etc.
+
+   4. Assets: Styles related with the assets of the project, e.g. images, svg, etc.
+   ================= */
+
+/* =================
+   1. Global Styles
+   ================= */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -17,9 +35,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Outfit', sans-serif;
 }
+
+/* =================
+   2. Layout
+   ================= */
 
 .container {
   background-color: var(--white);
@@ -34,14 +56,13 @@ body {
   width: 20rem;
 }
 
-.image {
-  width: 100%;
-  border-radius: 1em;
-}
-
 .text-container {
   padding: 0 0.75em;
 }
+
+/* =================
+   3. Typography
+   ================= */
 
 .title {
   padding: 0;
@@ -58,4 +79,13 @@ body {
   font-size: 1rem;
   text-align: center;
   color: var(--grayish-blue);
+}
+
+/* =================
+   4. Assets 
+   ================= */
+
+.image {
+  width: 100%;
+  border-radius: 1em;
 }
