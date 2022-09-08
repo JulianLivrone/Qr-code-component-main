@@ -54,6 +54,16 @@ body {
   align-items: center;
   gap: 1rem;
   width: 20rem;
+  animation: load-container 2s;
+}
+
+@keyframes load-container {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY();
+  }
 }
 
 .text-container {
@@ -71,6 +81,16 @@ body {
   font-size: 1.25rem;
   text-align: center;
   color: var(--dark-blue);
+  animation: load-title 2s;
+}
+
+@keyframes load-title {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .description {
@@ -79,6 +99,16 @@ body {
   font-size: 1rem;
   text-align: center;
   color: var(--grayish-blue);
+  animation: load-description 2s;
+}
+
+@keyframes load-description {
+  0% {
+    transform: translateY(3000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* =================
@@ -88,4 +118,14 @@ body {
 .image {
   width: 100%;
   border-radius: 1em;
+  animation: load-image 2s;
+}
+
+@keyframes load-image {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
